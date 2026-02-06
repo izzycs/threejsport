@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>360° Developer Room</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="ui-overlay">
+        <header class="ui-header">
+          <div>
+            <p class="ui-kicker">Interactive 360° Developer Room</p>
+            <h1>Explore the Space</h1>
+            <p class="ui-subtext">Drag to look around. Hover the monitor to reveal developer info.</p>
+          </div>
+          <button id="toggle-light" class="ui-button" type="button">Toggle Day/Night</button>
+        </header>
+        <div class="vignette"></div>
+        <div class="fade-in"></div>
+      </div>
+      <canvas id="room-canvas" aria-label="360 degree developer room"></canvas>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
